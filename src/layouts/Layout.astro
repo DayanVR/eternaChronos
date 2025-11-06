@@ -1,0 +1,23 @@
+---
+import Header from "../components/header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eternea Chronos</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  body {
+    background-color: #f4f4f4;
+    margin: 0 10%;
+  }
+</style>
