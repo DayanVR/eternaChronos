@@ -1,16 +1,36 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <main>
+    <section class="h-96 bg-sky-300">Sumer Value Pack</section>
+    <section class="flex h-80 justify-between gap-8">
+      <article class="bg-orange-300">
+        <h3>Low Price</h3>
+        <div>
+          <h2>High Coziness</h2>
+          <span>UPTO 50% OFF</span>
+        </div>
+        <a href="/">Explore Items</a>
+      </article>
+      <article class="bg-violet-400">
+        <h3>Beyound Presents</h3>
+        <div>
+          <h2>Breezy Summer Style</h2>
+          <span>UPTO 50% OFF</span>
+        </div>
+        <a href="/">Explore Items</a>
+      </article>
+    </section>
+    <section>New Arrival</section>
+    <section>Big Saving Zone</section>
+  </main>
+</Layout>
+
+<style>
+  article {
+    border-radius: 16px;
+    width: 100%;
+  }
+</style>
